@@ -58,6 +58,7 @@ def is_validated_english_sentence(user_input):
 
 
 def is_validated_morse_code(user_input):
+    user_codes = user_input.split(' ')
     morse_codes = set(get_morse_code_dict().values())
     morse_codes.add('')
 
